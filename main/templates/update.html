@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>actualizar</title>
+</head>
+<body>
+    <h1>Funciono</h1>
+    <form action="{% url 'editar' %}" method="post">
+        {% csrf_token %}
+        <label for="">Nome</label>
+        <input type="text" name="Nome" value="{{ funcionario.Nome }}"><br><br>
+        <label for="">idade</label>
+        <input type="text" name="idade" value="{{ funcionario.idade }}"><br><br>
+        <label for="">profissao</label>
+        <input type="text" name="profissao" value="{{ funcionario.profissao }}"><br><br>
+        <input type="hidden" name="id" value="{{ funcionario.id }}">
+        <button type="submit">actualizar</button>
+    </form>
+
+
+</body>
+</html>

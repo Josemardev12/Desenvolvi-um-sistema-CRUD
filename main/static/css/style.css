@@ -1,0 +1,72 @@
+td{
+    padding: 10px;
+}
+
+
+.botao1{
+    padding: 5px;
+    background-color: rgb(119, 212, 139);
+    text-decoration: none;
+    font-size: small;
+    border: 1px solid black;
+    border-radius: 15px;
+    color: black;
+}
+
+.botao1:hover{
+    color: rgb(255, 255, 255);
+}
+
+
+.botao2{
+    padding: 5px;
+    background-color: rgb(255, 0, 0);
+    text-decoration: none;
+    font-size: small;
+    border: 1px solid black;
+    border-radius: 15px;
+    color: black;
+}
+
+.botao2:hover{
+    color: white;
+}
+
+.Adcionar{
+    padding: 10px;
+    background-color: aqua;
+    border-radius: 30px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.Adcionar:hover{
+    color: darkslategray;
+}
+
+h1{
+    text-align: center;
+}
+
+.left{
+    padding-left: 100px;
+    border: 10px solid green;
+    text-align: center;
+    padding: 100px;
+}
+
+input{
+    border: 10px solid green;
+    padding: 9px;
+    margin: 10px;
+}
+
+.up{
+    background-color: blueviolet;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    color: aqua;
+}
+.add{
+    background-color: aqua;
+}

@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Funcionario</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+</head>
+<body class="index">
+    
+    <table width="100%" border="1" style="text-align: center;">
+        <tr>
+            <th> id </th>
+            <th> Nome </th>
+            <th> idade </th>
+            <th> Profissacao </th>
+            <th> modificação </th>
+        </tr>
+        {% for i in trabalhador %}
+        <tr>
+            <td>{{ forloop.counter }}</td>
+            <td>{{ i.Nome }}</td>
+            <td>{{ i.idade }}</td>
+            <td>{{ i.profissao }}</td>
+            <td>
+                <a href="update/{{i.id}}" class="botao1" >actualizar</a>
+                <a href="deleta/{{i.id}}" class="botao2" >Deletar</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+    <br><br>
+    <a href="/add" class="Adcionar">add</a>
+
+
+
+</body>
+</html>
